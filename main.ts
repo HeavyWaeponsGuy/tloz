@@ -590,7 +590,7 @@ controller.player1.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Press
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`nivel2`)
+    tiles.setCurrentTilemap(tilemap`level2`)
 })
 let Attack = false
 let green_dir = 0
@@ -602,7 +602,7 @@ controller.moveSprite(Link_1)
 controller.player2.moveSprite(Link_2, 100, 100)
 splitScreen.cameraFollowSprite(splitScreen.Camera.Camera1, Link_1)
 splitScreen.cameraFollowSprite(splitScreen.Camera.Camera2, Link_2)
-tiles.setCurrentTilemap(tilemap`nivel1`)
+tiles.setCurrentTilemap(tilemap`level1`)
 tiles.placeOnRandomTile(Link_1, assets.tile`transparency16`)
 tiles.placeOnRandomTile(Link_2, assets.tile`transparency16`)
 let Old_man = sprites.create(img`
