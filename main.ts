@@ -625,3 +625,6 @@ let Old_man = sprites.create(img`
     `, SpriteKind.NPC)
 tiles.placeOnRandomTile(Old_man, assets.tile`transparency16`)
 Old_man.setScale(1.75, ScaleAnchor.Middle)
+forever(function () {
+    info.changeScoreBy(1)
+})
